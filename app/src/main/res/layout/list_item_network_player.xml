@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/players_list_item_height"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/colorBoard">
+
+    <ImageView
+        android:id="@+id/iv_player_shape"
+        android:layout_width="@dimen/players_list_item_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_player_shape"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:gravity="bottom"
+        android:maxLines="1"
+        tools:text="WWWWWWWWWW"/>
+
+    <TextView
+        android:id="@+id/tv_games_played"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/ChalkTextSmall"
+        android:gravity="bottom"
+        android:maxLines="1"
+        tools:text="Played: 99999"/>
+
+    <TextView
+        android:id="@+id/tv_games_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_games_left"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="8dp"
+        android:textAppearance="@style/ChalkTextSmall"
+        android:maxLines="1"
+        tools:text="Won: 99999"/>
+
+    <TextView
+        android:id="@+id/tv_games_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="8dp"
+        android:textAppearance="@style/ChalkTextSmall"
+        android:maxLines="1"
+        tools:text="Left: 99999"/>
+
+</RelativeLayout>

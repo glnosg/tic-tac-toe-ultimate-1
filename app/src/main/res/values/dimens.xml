@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="root_layout_padding">10dp</dimen>
+    <dimen name="players_list_item_height">40dp</dimen>
+    <dimen name="game_save_list_item_height">90dp</dimen>
+</resources>

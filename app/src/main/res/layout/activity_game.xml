@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBoard"
+    android:padding="@dimen/root_layout_padding"
+    tools:context=".game.GameActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_local_players"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/ll_buttons"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_network_players"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/tv_time_counter"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_time_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_buttons"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/ChalkTextLarge"
+        tools:text="00:22"/>
+
+    <TextView
+        android:id="@+id/tv_game_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/ll_buttons"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:lineSpacingExtra="10dp"
+        android:textAppearance="@style/ChalkTextLarge"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_joiner_candidates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/tv_game_message"
+        android:layout_above="@+id/ll_buttons"/>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fl_game_board"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="@dimen/root_layout_padding">
+
+        <Button
+            android:id="@+id/button_zoom_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_wood_round"
+            android:text="@string/button_zoom_out"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_leave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_wood_round"
+            android:text="@string/button_leave"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_new_opponent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_wood_round"
+            android:text="@string/button_new_opponent"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_decline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_wood_round"
+            android:text="@string/button_decline"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_wood_round"
+            android:text="@string/button_accept"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_next_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_wood_round"
+            android:text="@string/button_next_game"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:id="@+id/fl_game_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="preferences_languages_labels">
+        <item>@string/preferences_language_summary_english</item>
+        <item>@string/preferences_language_summary_polish</item>
+    </array>
+    <array name="preferences_languages_values">
+        <item>@string/preferences_language_value_english</item>
+        <item>@string/preferences_language_value_polish</item>
+    </array>
+</resources>

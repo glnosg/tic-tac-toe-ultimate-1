@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/players_list_item_height"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBoard">
+
+    <TextView
+        android:id="@+id/tv_player_label"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom"
+        tools:text="Player 1:"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tv_player_label"
+        android:layout_toLeftOf="@+id/tv_difficulty"
+        android:background="@color/colorBoard"
+        android:fontFamily="@font/chawp"
+        android:gravity="bottom"
+        android:maxLength="10"
+        android:textColor="@color/colorChalk" />
+
+    <TextView
+        android:id="@+id/tv_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:text="@string/player_control_label_human"
+        android:textAppearance="@style/ChalkTextMedium"
+        android:maxLines="1"/>
+
+</RelativeLayout>

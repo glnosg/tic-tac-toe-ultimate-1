@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/colorBoard"
+    android:layout_height="@dimen/game_save_list_item_height"
+    android:paddingBottom="10dp">
+
+    <View
+        android:id="@+id/view_top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/divider_list_item"/>
+
+    <TextView
+        android:id="@+id/tv_game_mode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/view_top_divider"
+        android:text="@string/label_game_mode"
+        android:textAppearance="@style/ChalkTextMedium"/>
+
+    <TextView
+        android:id="@+id/tv_board_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        tools:text="Ultimate"
+        android:textAppearance="@style/ChalkTextLarge"/>
+
+    <TextView
+        android:id="@+id/tv_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_top_divider"
+        android:textAppearance="@style/ChalkTextLarge"
+        tools:text="Patrycy"/>
+
+    <TextView
+        android:id="@+id/tv_author_games_played"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toLeftOf="@+id/tv_author_games_won"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@style/ChalkTextSmall"
+        tools:text="Played: 999"/>
+
+    <TextView
+        android:id="@+id/tv_author_games_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_toLeftOf="@+id/tv_author_games_left"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@style/ChalkTextSmall"
+        tools:text="Won: 999"/>
+
+    <TextView
+        android:id="@+id/tv_author_games_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@style/ChalkTextSmall"
+        tools:text="Left: 000"/>
+</RelativeLayout>

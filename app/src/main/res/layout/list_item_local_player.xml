@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/players_list_item_height"
+    android:background="@color/colorBoard">
+
+    <ImageView
+        android:id="@+id/iv_player_shape"
+        android:layout_width="@dimen/players_list_item_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_player_shape"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:layout_marginLeft="10dp"
+        android:gravity="bottom"
+        android:maxLines="1"
+        tools:text="WWWWWWWWWW"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tv_name"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        tools:text="9999"/>
+
+    <TextView
+        android:id="@+id/tv_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/ChalkTextMedium"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:clickable="true"
+        tools:text="MEDIUM"/>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorBoard"
+    android:padding="@dimen/root_layout_padding"
+    tools:context=".main_menu.MainMenuActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_tictactoe"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ib_standard_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_menu_standard_game"
+            android:onClick="mainMenuButtonClicked"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:background="@drawable/button_background_wood_round"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/ib_custom_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_menu_custom_game"
+            android:onClick="mainMenuButtonClicked"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:background="@drawable/button_background_wood_round"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/ib_load_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mainMenuButtonClicked"
+            android:text="@string/button_menu_load_game"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:background="@drawable/button_background_wood_round"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/ib_play_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_menu_play_online"
+            android:onClick="mainMenuButtonClicked"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:background="@drawable/button_background_wood_round"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

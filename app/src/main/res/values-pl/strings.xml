@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kółko i krzyżyk</string>
+    <string name="splash_screen_label">Kółko i Krzyzyk</string>
+
+    <string name="button_menu_standard_game">Gra Klasyczna</string>
+    <string name="button_menu_custom_game">Gra Spersonalizowana</string>
+    <string name="button_menu_load_game">Wczytaj Grę</string>
+    <string name="button_menu_play_online">Graj Online</string>
+
+    <string name="button_settings_start">Start!</string>
+    <string name="button_settings_add">Dodaj</string>
+    <string name="button_settings_remove">Usuń</string>
+
+    <string name="button_accept">Akceptuj</string>
+    <string name="button_cancel">Anuluj</string>
+    <string name="button_decline">Odrzuć</string>
+    <string name="button_leave">Opuść grę</string>
+    <string name="button_next_game">Następna</string>
+    <string name="button_zoom_out">Oddal</string>
+    <string name="button_new_opponent">Nowy przeciwnik</string>
+
+    <string name="description_how_many_in_row">* Liczba figur w linii potrzebnych do wygranej</string>
+    <string name="description_number_of_columns">* Liczba kolumn planszy do gry</string>
+    <string name="description_number_of_deactivated_boards">* Liczba losowo wybranych plansz, ktore sa aktywowane w kazdej rundzie</string>
+    <string name="description_number_of_rows">* Liczba wierszy planszy do gry</string>
+
+    <string name="dialog_lose_if_leave">Przegrasz jesli opuscisz gre w tym momencie!</string>
+    <string name="dialog_waiting_for_decision">Oczekiwanie na decyzje</string>
+
+    <string name="game_message_finished_draw">Remis!</string>
+    <string name="game_message_finished_winner_suffix">&#160;wygrywa!</string>
+    <string name="game_message_opponent_left">Przeciwnik opuscil gre, wygrywasz!</string>
+    <string name="game_message_opponent_wants_join_suffix">Ktos chce sie do Ciebie przyłaczyc:</string>
+    <string name="game_message_opponent_wants_play_again">Przeciwnik rzuca Ci kolejne wyzwanie!</string>
+    <string name="game_message_waiting_for_inactive_opponent">Oczekiwanie na powrot przeciwnika</string>
+    <string name="game_message_waiting_for_opponent">Oczekiwanie na nowego przeciwnika</string>
+    <string name="game_message_waiting_for_opponent_decision">Oczekiwanie na decyzje przeciwnika</string>
+    <string name="game_message_you_out_of_time">Koniec czasu!</string>
+
+    <string name="instructions_single_board_full">Gra konczy sie gdy jeden z graczy wygra, lub gdy nikt nie ma juz mozliwosci wykonania ruchu.</string>
+    <string name="instructions_single_empty_board">Gra rozgrywa sie miedzy dwoma graczami (X i O), na planszy 3x3.</string>
+    <string name="instructions_single_one_figure">Pierwszy gracz rozpoczyna poprzez umieszczenie swojego symbolu na dowolnym z dziewieciu pol.</string>
+    <string name="instructions_single_three_figures">Gracze wykonuja ruchy naprzemiennie.</string>
+    <string name="instructions_single_two_figures">Drugi gracz umieszcza swoj symbol na jednym z pozostalych pol.</string>
+    <string name="instructions_single_winner">Aby wygrac gre, nalezy umiescic trzy symbole w linii.</string>
+
+    <string name="instructions_ultimate_board_full">Lub do momentu, gdy zaden z graczy nie ma mozliwosci wykonania prawidłowego ruchu.</string>
+    <string name="instructions_ultimate_empty_board">"W trybie rozszerzonym plansza składa sie z dziewieciu mniejszych plansz 3x3, aby zwyciezyc gracz musi wygrac trzy male gry w linii. "</string>
+    <string name="instructions_ultimate_game_won">Gra jest kontynuowana do momentu wygranej jednego z graczy&#8230;</string>
+    <string name="instructions_ultimate_one_figure">Pierwszy gracz rusza sie gdzie zechce.</string>
+    <string name="instructions_ultimate_one_figure_corresponding_cell">Mała plansza, na ktorej drugi gracz musi umiescic swoj symbol jest wyznaczona na podstawie ruchu poprzedniego gracza.</string>
+    <string name="instructions_ultimate_one_winner">Do momentu, w ktorym jeden z graczy wygra jedna z małych gier.</string>
+    <string name="instructions_ultimate_two_figures">I tak dalej&#8230;</string>
+    <string name="instructions_ultimate_whole_board_active">Kiedy gracz zdecyduje sie na ruch w polu odpowiadajacym malej planszy, ktora jest juz wyłaczona z gry, jego przeciwnik moze ruszac się na całej planszy.</string>
+
+    <string name="label_multi_board">Tryb Rozszerzony</string>
+    <string name="label_single_board">Standardowy</string>
+    <string name="label_ultimate">Rozszerzony</string>
+    <string name="label_ultimate_mode">Tryb rozszerzony:</string>
+    <string name="label_how_to_play">Instrukcje:</string>
+    <string name="label_game_mode">Tryb gry:</string>
+    <string name="label_creator">Twórca:</string>
+    <string name="label_accepted">W grze</string>
+    <string name="label_join_someone">Przyłacz sie:</string>
+    <string name="label_display_name">Imie:</string>
+    <string name="label_start_own_game">Zacznij nowa gre:</string>
+    <string name="label_settings">Ustawienia</string>
+
+    <string name="message_board_to_small">Będziesz potrzebować większej planszy!</string>
+    <string name="message_bot_not_supported">Bot niedostępny w tym trybie</string>
+    <string name="message_cant_save_online">Gra online nie może zostać zapisana</string>
+    <string name="message_cant_sign_out">Nie możesz się wylogować w tym momencie</string>
+    <string name="message_game_save_success">Gra zapisana</string>
+    <string name="message_nothing_to_show">Nic tu nie ma</string>
+    <string name="message_signed_in">Zalogowano</string>
+    <string name="message_signed_out">Wylogowano</string>
+    <string name="message_signing_in_cancelled">Logowanie przerwane</string>
+    <string name="message_something_went_wrong">Coś poszło nie tak</string>
+
+    <string name="net_player_label_left">Ucieczki</string>
+    <string name="net_player_label_played">Gry</string>
+    <string name="net_player_label_won">Wygrane</string>
+
+    <string name="player_control_label_bot_easy">ŁATWY</string>
+    <string name="player_control_label_bot_hard">TRUDNY</string>
+    <string name="player_control_label_bot_medium">SREDNI</string>
+    <string name="player_control_label_human">CZŁOWIEK</string>
+    <string name="player_label">Gracz</string>
+
+    <string name="preferences_language_title">Jezyk</string>
+
+    <string name="preferences_auto_save_title">Automatyczny zapis</string>
+    <string name="preferences_auto_save_summary_on">Wł.</string>
+    <string name="preferences_auto_save_summary_off">Wył.</string>
+
+    <string name="toolbar_menu_title_exit">Wyjście</string>
+    <string name="toolbar_menu_title_save">Zapisz grę</string>
+    <string name="toolbar_menu_title_settings">Ustawienia</string>
+    <string name="toolbar_menu_title_sign_out">Wyloguj się</string>
+</resources>

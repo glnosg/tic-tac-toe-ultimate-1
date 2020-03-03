@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBoard"
+    android:padding="15dp"
+    tools:context=".main_menu.standard_game_settings.StandardGameSettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_name_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ChalkTextMedium"
+            android:text="@string/label_display_name"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBoard"
+            android:fontFamily="@font/chawp"
+            android:textColor="@color/colorChalk"
+            android:maxLength="10"
+            android:paddingLeft="6dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_start_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_start_own_game"
+        android:padding="15dp"
+        android:background="@drawable/background_text_view_frame_wood"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:layout_below="@+id/ll_name_settings"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_start_new_game"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_ultimate_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_ultimate_mode"
+                android:textAppearance="@style/ChalkTextMedium" />
+
+            <ToggleButton
+                android:id="@+id/tb_ultimate_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_switch_chalk_transparent_off"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="0dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/button_background_wood_round"
+            android:textAppearance="@style/GameActionButtonTextLarge"
+            android:text="@string/button_settings_start"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_join_someone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_join_someone"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_text_view_frame_wood"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:layout_below="@id/rl_bottom_panel"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_open_games_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/tv_join_someone"/>
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_join_someone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_empty_database"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_join_someone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/message_nothing_to_show"
+        android:textAppearance="@style/ChalkTextLarge"
+        android:visibility="gone"/>
+
+</RelativeLayout>
