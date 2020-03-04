@@ -20,6 +20,8 @@ An extended version of a popular strategic board game. The game can be played ei
 
 ![GameplayCustomSingle](https://i.imgur.com/zT5321V.jpg)  ![GameplayCustomUltimate](https://i.imgur.com/Ltb8fYS.jpg)
 
+![GameplayCustomUltimate](https://i.imgur.com/YvnLhOy.jpg)
+
 * Custom game settings:
 
 ![SettingsCustom](https://i.imgur.com/SgprZls.jpg)Nowa wersja
